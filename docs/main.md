@@ -1,6 +1,7 @@
 # Detonating Sharks Main Design Document
 
 ## Cards
+
 - Detonating Shark: You immediately blow up
 - Fish: Prevent a detonating shark from blowing up (and place it back in the deck)
 - Speedboat: Skip a turn
@@ -11,7 +12,7 @@
 - Submarine: Look at the top 3 cards of the deck
 - Utility Sub: Look at the top 3 cards of the deck, then put them back in any order
 - Steel Cage: Stop the action of another player, can be played at any time
-- Bait: 
+- Bait:
   - 5 types
   - Play a pair to take a random card from a player
   - Play 3 of a kind to take a card of choice from a player
@@ -21,6 +22,7 @@
 - Deep Ocean Fishing: Draw from the bottom of the deck
 
 ## Special Cards (Not in "base" game)
+
 - Blast-Proof Hull: Allows you to carry detonating sharks without blowing up
 - Detonating Shark Frenzy: You immediately die and can't use fish to save yourself
 - Bait and switch: Divert a detonating shark you draw to another player
