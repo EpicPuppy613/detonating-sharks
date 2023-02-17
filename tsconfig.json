@@ -1,13 +1,10 @@
 {
-    "compilerOptions": {
-        "module": "ESNext",
-        "lib": ["ES7", "DOM", "ES2015.promise"]
-    },
-    "include": [
-        "src/**/*"
-    ],
-    "exclude": [
-        "node_modules",
-        "src/client/electron"
-    ]
+  "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "module": "ESNext",
+    "target": "ESNext",
+    "allowJs": true
+  },
+  "files": ["src/client/index.ts"]
 }
