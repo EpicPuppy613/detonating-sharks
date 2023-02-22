@@ -2,6 +2,26 @@ import { Game } from "../../index";
 import { Player } from "../player";
 import { Card } from "./card";
 
+//image imports
+import dsImg from "../../assets/img/ds.png";
+import fhImg from "../../assets/img/fh.png";
+import sbImg from "../../assets/img/sb.png";
+import tpImg from "../../assets/img/tp.png";
+import stImg from "../../assets/img/st.png";
+import gfImg from "../../assets/img/gf.png";
+import wpImg from "../../assets/img/wp.png";
+import smImg from "../../assets/img/sm.png";
+import usImg from "../../assets/img/us.png";
+import cgImg from "../../assets/img/cg.png";
+import btwImg from "../../assets/img/btw.png";
+import btmImg from "../../assets/img/btm.png";
+import btlImg from "../../assets/img/btl.png";
+import btiImg from "../../assets/img/bti.png";
+import bthImg from "../../assets/img/bth.png";
+import bttImg from "../../assets/img/btt.png";
+import dfImg from "../../assets/img/df.png";
+import cardImg from "../../assets/img/card.png";
+
 const DetonatingShark: Card = {
     id: "ds",
     name: "Detonating Shark",
@@ -10,6 +30,7 @@ const DetonatingShark: Card = {
     bait: false,
     interrupt: false,
     targeted: false,
+    image: new Image(),
     count: {
         base: -1,
         inc: 1
@@ -19,6 +40,8 @@ const DetonatingShark: Card = {
     }
 }
 
+DetonatingShark.image.src = dsImg;
+
 const Fish: Card = {
     id: "fh",
     name: "Fish",
@@ -27,6 +50,7 @@ const Fish: Card = {
     bait: false,
     interrupt: false,
     targeted: false,
+    image: new Image(),
     count: {
         base: 0,
         inc: 1
@@ -34,6 +58,8 @@ const Fish: Card = {
     action: (player: Player, G: Game) => {
     }
 }
+
+Fish.image.src = fhImg;
 
 const Speedboat: Card = {
     id: "sb",
@@ -43,6 +69,7 @@ const Speedboat: Card = {
     bait: false,
     interrupt: false,
     targeted: false,
+    image: new Image(),
     count: {
         base: 1,
         inc: 1
@@ -52,6 +79,8 @@ const Speedboat: Card = {
     }
 }
 
+Speedboat.image.src = sbImg;
+
 const Torpedoes: Card = {
     id: "tp",
     name: "Torpedoes",
@@ -60,6 +89,7 @@ const Torpedoes: Card = {
     bait: false,
     interrupt: false,
     targeted: false,
+    image: new Image(),
     count: {
         base: 1,
         inc: 1
@@ -69,6 +99,8 @@ const Torpedoes: Card = {
     }
 }
 
+Torpedoes.image.src = tpImg;
+
 const SeekingTorpedoes: Card = {
     id: "st",
     name: "Seeking Torpedoes",
@@ -77,6 +109,7 @@ const SeekingTorpedoes: Card = {
     bait: false,
     interrupt: false,
     targeted: true,
+    image: new Image(),
     count: {
         base: 1,
         inc: 1
@@ -84,6 +117,8 @@ const SeekingTorpedoes: Card = {
     action: (player: Player, G: Game) => {
     }
 }
+
+SeekingTorpedoes.image.src = stImg;
 
 const GoFishing: Card = {
     id: "gf",
@@ -93,6 +128,7 @@ const GoFishing: Card = {
     bait: false,
     interrupt: false,
     targeted: true,
+    image: new Image(),
     count: {
         base: 1,
         inc: 1
@@ -100,6 +136,8 @@ const GoFishing: Card = {
     action: (player: Player, G: Game) => {
     }
 }
+
+GoFishing.image.src = gfImg;
 
 const Whirlpool: Card = {
     id: "wp",
@@ -109,6 +147,7 @@ const Whirlpool: Card = {
     bait: false,
     interrupt: false,
     targeted: false,
+    image: new Image(),
     count: {
         base: 1,
         inc: 1
@@ -118,6 +157,8 @@ const Whirlpool: Card = {
     }
 }
 
+Whirlpool.image.src = wpImg;
+
 const Submarine: Card = {
     id: "sm",
     name: "Submarine",
@@ -126,6 +167,7 @@ const Submarine: Card = {
     bait: false,
     interrupt: false,
     targeted: false,
+    image: new Image(),
     count: {
         base: 2,
         inc: 2
@@ -133,6 +175,8 @@ const Submarine: Card = {
     action: (player: Player, G: Game) => {
     }
 }
+
+Submarine.image.src = smImg;
 
 const UtilitySubmarine: Card = {
     id: "us",
@@ -142,6 +186,7 @@ const UtilitySubmarine: Card = {
     bait: false,
     interrupt: false,
     targeted: false,
+    image: new Image(),
     count: {
         base: 2,
         inc: 1.5
@@ -149,6 +194,8 @@ const UtilitySubmarine: Card = {
     action: (player: Player, G: Game) => {
     }
 }
+
+UtilitySubmarine.image.src = usImg;
 
 const Cage: Card = {
     id: "cg",
@@ -158,6 +205,7 @@ const Cage: Card = {
     bait: false,
     interrupt: true,
     targeted: false,
+    image: new Image(),
     count: {
         base: 2,
         inc: 1.5
@@ -165,6 +213,8 @@ const Cage: Card = {
     action: (player: Player, G: Game) => {
     }
 }
+
+Cage.image.src = cgImg;
 
 //BAIT CARDS
 const Worms: Card = {
@@ -175,6 +225,7 @@ const Worms: Card = {
     bait: true,
     interrupt: false,
     targeted: false,
+    image: new Image(),
     count: {
         base: 2,
         inc: 1.5,
@@ -182,6 +233,8 @@ const Worms: Card = {
     action: (player: Player, G: Game) => {
     }
 }
+
+Worms.image.src = btwImg;
 
 const Minnows: Card = {
     id: "btm",
@@ -191,6 +244,7 @@ const Minnows: Card = {
     bait: true,
     interrupt: false,
     targeted: false,
+    image: new Image(),
     count: {
         base: 2,
         inc: 1.5,
@@ -199,14 +253,17 @@ const Minnows: Card = {
     }
 }
 
-const Lure: Card = {
+Minnows.image.src = btmImg;
+
+const Lures: Card = {
     id: "btl",
-    name: "Lure",
+    name: "Lures",
     desc: "Bait card: Play in pairs, triplets, quintuplets, or a set.",
     immediate: false,
     bait: true,
     interrupt: false,
     targeted: false,
+    image: new Image(),
     count: {
         base: 2,
         inc: 1.5,
@@ -214,6 +271,8 @@ const Lure: Card = {
     action: (player: Player, G: Game) => {
     }
 }
+
+Lures.image.src = btlImg;
 
 const Insects: Card = {
     id: "bti",
@@ -223,6 +282,7 @@ const Insects: Card = {
     bait: true,
     interrupt: false,
     targeted: false,
+    image: new Image(),
     count: {
         base: 2,
         inc: 1.5,
@@ -230,6 +290,8 @@ const Insects: Card = {
     action: (player: Player, G: Game) => {
     }
 }
+
+Insects.image.src = btiImg;
 
 const Leeches: Card = {
     id: "bth",
@@ -239,6 +301,7 @@ const Leeches: Card = {
     bait: true,
     interrupt: false,
     targeted: false,
+    image: new Image(),
     count: {
         base: 2,
         inc: 1.5,
@@ -246,6 +309,8 @@ const Leeches: Card = {
     action: (player: Player, G: Game) => {
     }
 }
+
+Leeches.image.src = bthImg;
 
 const TackleBox: Card = {
     id: "btt",
@@ -255,22 +320,7 @@ const TackleBox: Card = {
     bait: true,
     interrupt: false,
     targeted: false,
-    count: {
-        base: 1,
-        inc: 1,
-    },
-    action: (player: Player, G: Game) => {
-    }
-}
-
-const DeepWaterFishing: Card = {
-    id: "df",
-    name: "Deep Water Fishing",
-    desc: "Draw from the bottom of the deck.",
-    immediate: false,
-    bait: false,
-    interrupt: false,
-    targeted: false,
+    image: new Image(),
     count: {
         base: 2,
         inc: 1.5,
@@ -279,7 +329,47 @@ const DeepWaterFishing: Card = {
     }
 }
 
-export const Cards = {
+TackleBox.image.src = bttImg;
+
+const DeepFishing: Card = {
+    id: "df",
+    name: "Deep Fishing",
+    desc: "Draw from the bottom of the deck.",
+    immediate: false,
+    bait: false,
+    interrupt: false,
+    targeted: false,
+    image: new Image(),
+    count: {
+        base: 2,
+        inc: 1.5,
+    },
+    action: (player: Player, G: Game) => {
+    }
+}
+
+DeepFishing.image.src = dfImg;
+
+const CardBack: Card = {
+    id: "card",
+    name: "Card",
+    desc: "Card",
+    immediate: false,
+    bait: false,
+    interrupt: false,
+    targeted: false,
+    image: new Image(),
+    count: {
+        base: 0,
+        inc: 0,
+    },
+    action: (player: Player, G: Game) => {
+    }
+}
+
+CardBack.image.src = cardImg;
+
+export const Cards: {[key: string]: Card} = {
     DetonatingShark,
     Fish,
     Speedboat,
@@ -292,9 +382,10 @@ export const Cards = {
     Cage,
     Worms,
     Minnows,
-    Lure,
+    Lures,
     Insects,
     Leeches,
     TackleBox,
-    DeepWaterFishing
+    DeepFishing,
+    CardBack
 };

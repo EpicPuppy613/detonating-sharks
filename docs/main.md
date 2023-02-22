@@ -19,7 +19,7 @@
   - Play 5 of a kind to take a card of choice from a player, if they don't have it, you can take that card from the discard pile
   - Play 1 of each to take a card from the discard pile
 - Tackle Box: Can act as any type of bait
-- Deep Ocean Fishing: Draw from the bottom of the deck
+- Deep Fishing: Draw from the bottom of the deck
 
 ## Special Cards (Not in "base" game)
 

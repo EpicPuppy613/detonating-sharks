@@ -4,7 +4,10 @@
     "noImplicitAny": true,
     "module": "ESNext",
     "target": "ESNext",
-    "allowJs": true
+    "allowJs": true,
+    "moduleResolution": "nodeNext",
+    "typeRoots": ["typings"]
   },
-  "files": ["src/client/index.ts"]
+  "files": ["src/client/index.ts"],
+  "include": ["src", "index.d.ts"]
 }

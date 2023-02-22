@@ -9,6 +9,7 @@ export type Card = {
     interrupt: boolean;
     bait: boolean;
     targeted: boolean;
+    image: null | HTMLImageElement;
     count: {
         base: number;
         inc: number;
